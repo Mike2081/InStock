@@ -1,0 +1,388 @@
+body {
+  font-size: 0.75rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+a, button, label {
+  text-decoration: none;
+  border: none;
+  font-size: 0.8rem;
+}
+
+span {
+  font-size: 0.75rem;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.navbar {
+  -webkit-box-shadow: 0px 6px 8px -3px rgba(17, 17, 17, 0.06);
+          box-shadow: 0px 6px 8px -3px rgba(17, 17, 17, 0.06);
+  width: 100%;
+  height: 100px;
+  background-color: #FFFFFF;
+  padding: 0 6rem 0 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__search {
+  border: 1px solid #DEDEDE;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar__search:focus-within {
+  border-color: #004892;
+}
+
+.navbar__search--input {
+  width: 381px;
+  height: 100%;
+  background: #F7F7F7;
+  border: none;
+  outline: none;
+}
+
+.navbar__search--input::-webkit-input-placeholder {
+  color: #7C7C7C;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+}
+
+.navbar__search--input:-ms-input-placeholder {
+  color: #7C7C7C;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+}
+
+.navbar__search--input::-ms-input-placeholder {
+  color: #7C7C7C;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+}
+
+.navbar__search--input::placeholder {
+  color: #7C7C7C;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+}
+
+.navbar__search--button {
+  width: 50px;
+  height: 100%;
+  background-color: #F7F7F7;
+  border: none;
+  outline: none;
+}
+
+.navbar__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar__options--avator {
+  width: 36px;
+  height: 36px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar__options--icon {
+  padding-left: 1rem;
+}
+
+.sidebar {
+  width: 300px;
+  min-height: 100vh;
+  color: #FFFFFF;
+  background-color: #004892;
+}
+
+.sidebar__logo {
+  width: 93px;
+  height: 13px;
+  margin: 3.3rem 3rem 4.5rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar__logo--icon {
+  width: 93px;
+  height: 13px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.sidebar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2rem 0;
+}
+
+.sidebar__menu:focus-within {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar__menu--icon {
+  padding: 0 2rem;
+}
+
+.sidebar__menu--title {
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.sidebar__menu--links:link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar__menu--links:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar__menu--links:active {
+  color: #FFFFFF;
+}
+
+.sidebar__menu--links:visited {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar__menu--links:focus-within {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/*# sourceMappingURL=nav-sidebar.css.map */

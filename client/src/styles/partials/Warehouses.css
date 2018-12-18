@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Avenir-regular';
+  src: url("../../../src/Typography/AvenirNext-Regular-08.ttf") format("TrueType");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.window {
+  background-color: #F7F7F7;
+}
+
+.window__container {
+  padding: 50px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 6rem;
+}
+
+.window__container__title1 {
+  font-size: 1.7rem;
+  font-family: 'Avenir-regular';
+}
+
+.window__container__title2 {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #004892;
+  font-weight: 600;
+}
+
+.window__modal-button {
+  -webkit-box-shadow: 2px 27px 50px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 27px 50px 15px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 70%;
+  left: 85%;
+  width: 65px;
+  height: 65px;
+  background-color: #004892;
+  border-radius: 50%;
+  outline: none;
+}
+
+.window__modal-button:hover {
+  background-color: #003B77;
+}
+
+.window__modal-plus {
+  fill: white;
+}
+/*# sourceMappingURL=Warehouses.css.map */

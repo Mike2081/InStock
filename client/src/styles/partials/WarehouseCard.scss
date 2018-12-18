@@ -1,0 +1,84 @@
+@import './variables';
+@font-face {
+    font-family: 'Avenir-Regular';
+    src: url('../../../src/Typography/AvenirNext-Regular-08.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+   }
+.frame{
+    margin: 0rem 2rem 1rem 2rem;
+    &__outBox{
+        padding: 0 2rem;
+        border: solid 1.4px #DEDEDE;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+        color: #003B77;
+        font-weight: 600;
+        font-size: 1.2rem;
+            &__wareNum1{
+                background-color: #FFFFFF;
+                height:15rem;
+                width:68rem;
+                display: inline;
+                &__title{
+                    margin: 2rem 0;
+                }
+                &__bloc{
+                    display: flex;
+                    justify-content: space-between;
+                    &__address{
+                        background-color: #FFFFFF;
+                        width:30%;
+                            &__cat{
+                                color: black;
+                                font-size: 0.8rem;
+                                margin-bottom: 1rem;
+                            }
+                            &__inBox{
+                                color: #7C7C7C;
+                                font-size: 0.8rem;
+                                margin-bottom: 1.7rem;
+                                &__info{
+
+                                }
+                            }
+                    }
+                    &__contact{
+                        background-color: #FFFFFF;
+                        width:30%;
+                            &__cat{
+                                color: black;
+                                font-size: 0.8rem;
+                                margin-bottom: 1rem;
+                            }
+                            &__inBox{
+                                color: #7C7C7C;
+                                font-size: 0.8rem;
+                                margin-bottom: 1.7rem;
+                                &__info{
+
+                                }
+                            }
+                    }
+                    &__inventory{
+                        background-color: #FFFFFF;
+                        width:30%;
+                            &__cat{
+                                color: black;
+                                font-size: 0.8rem;
+                                margin-bottom: 1rem;
+                            }
+                            &__inBox{
+                                color: #7C7C7C;
+                                font-size: 0.8rem;
+                                margin-bottom: 1.7rem;
+                                &__info{
+                                    
+                                }
+                            }
+                    }
+                }
+        }
+    }
+}
+

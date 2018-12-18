@@ -1,0 +1,100 @@
+@import '../styles/partials/variables';
+
+.InventoryItem {
+  background-color: $lightest-grey;
+  padding: 50px;
+  height: 100vh;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    padding: 50px;
+    background-color: white;
+  }
+  &__top {
+    width: 100%;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__productSummary {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: black;
+    border: none;
+    padding: 5px 0;
+    background-color: $lightest-grey;
+    margin-bottom: 50px;
+    transition: all 0.5s ease;
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+  &__backIcon {
+    width: 9px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  &__backText {
+    font-weight: 400;
+  }
+  &__header {
+    color: $blue;
+  }
+  &__info {
+    display: flex;
+    margin: 10px 0;
+  }
+  &__infoTitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 5px;;
+  }
+  &__infoText {
+    font-weight: 300;
+  }
+  &__newOrderButton {
+    padding: 0 22px;
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    background-color: $blue;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media #{$phone} {
+  .InventoryItem {
+    &__productSummary {
+     width: 100%;
+   }  
+  }
+}
+
+@media #{$phone-small} {
+  .InventoryItem {
+    &__card {
+      padding: 20px 5px 5px 5px;;
+    }
+    &__top {
+      justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
+   } 
+   &__newOrderButton {
+     margin-bottom: 30px;
+   } 
+  }
+}

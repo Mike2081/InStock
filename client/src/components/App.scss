@@ -1,0 +1,11 @@
+@import '../styles/partials/setup';
+@import '../styles/partials/font';
+
+.App {
+    &__body {
+        display: flex;
+        &--center {
+            width: 100vw;
+        }
+    }
+}

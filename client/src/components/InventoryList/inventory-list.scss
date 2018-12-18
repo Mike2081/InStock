@@ -1,0 +1,100 @@
+@import '../../styles/partials/font';
+@import '../../styles/partials/setup';
+@import '../../styles/partials/variables';
+
+$font-24: 1.5rem; // H1
+$font-18: 1.125rem; // H2
+$font-16: 1rem; // H3
+$font-14: 0.875rem; // H4
+$font-12: 0.75rem; // 
+h2 , h3 , h4, h5 {
+    font-weight: 500;
+}
+h2 {
+    font-size: $font-18;
+}
+h4 {
+    font-size: $font-14;
+}
+section {
+    min-height: 100vh; 
+    background: $lightest-grey;
+    color: $dim-grey;
+}
+p {
+    line-height: 1.5;
+}
+.inventory-list {
+    margin: 0;
+    padding: 0 2rem;
+    &__header {
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &--filter {
+            color: $blue;
+        }
+    }
+  }
+
+table {
+  min-width: 100%;
+  font-size: $font-14;
+  border: 1px solid $light-grey;
+  border-collapse: collapse;
+  th { 
+    background-color: $white;
+    font-size: $font-14;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 2rem 2rem;
+  }
+  tbody {
+    tr {
+      background-color: $white;
+      &:link {
+        color: $blue;
+      }
+      &:visited {
+        color: $blue;
+      }
+      td {          
+        padding: 1.5rem 2rem;         
+      }
+    }
+    tr:nth-child(odd){
+      background-color: $lightest-grey;
+    }
+    tr:hover {
+      background-color: $light-grey;
+    }
+  }
+}
+.table {
+    &__item-list {
+        &--name {
+            font-size: $font-14;
+            font-weight: 600;
+            color: $blue;
+        }
+        &--description {
+            font-size: $font-12;
+            font-weight: medium;
+            margin: 0;
+        }
+      }
+    }
+.deleteModal {
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  right: 10rem;
+  .deleterow {
+    padding: 1rem 1rem;
+    &:hover {
+      background-color: grey;
+    }
+  }
+}

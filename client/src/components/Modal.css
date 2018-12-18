@@ -1,0 +1,185 @@
+.modal-layer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.form-container {
+  position: absolute;
+  color: #393939;
+  background-color: #FFFFFF;
+  padding: 35px 55px;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  z-index: 2;
+  border-radius: 3px;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container__close-button {
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.form-container__close-button:hover {
+  opacity: 0.3;
+}
+
+.form-container__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container__close-icon {
+  margin-bottom: 10px;
+}
+
+.form-container__close-text {
+  text-transform: uppercase;
+  color: #CACACA;
+}
+
+.form-container__header {
+  margin-bottom: 45px;
+}
+
+.form-container__sub-header {
+  margin-bottom: 10px;
+}
+
+.form-container__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-container__sub-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 42%;
+  margin-bottom: 25px;
+}
+
+.form-container__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-container__label--warehouse {
+  width: 42%;
+  margin-bottom: 45px;
+}
+
+.form-container__label-header {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-container__input {
+  background-color: white;
+  border: 1px solid #CACACA;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 15px 14px;
+  height: 40px;
+}
+
+.form-container__input::-webkit-input-placeholder {
+  color: #CACACA;
+}
+
+.form-container__input:-ms-input-placeholder {
+  color: #CACACA;
+}
+
+.form-container__input::-ms-input-placeholder {
+  color: #CACACA;
+}
+
+.form-container__input::placeholder {
+  color: #CACACA;
+}
+
+.form-container__input:focus-within {
+  color: black;
+}
+
+.form-container__input--select {
+  background: url("/Assets/Icons/Dropdown.svg") no-repeat;
+  background-size: 10px;
+  background-position: 95%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 15px;
+  color: #CACACA;
+}
+
+.form-container__input-error {
+  color: red;
+  position: absolute;
+  margin-top: 65px;
+}
+
+.form-container__save-location {
+  outline: none;
+  padding: 0 22px;
+  width: 131px;
+  height: 38px;
+  border: none;
+  margin-left: auto;
+  border-radius: 3px;
+  background-color: #004892;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.form-container__save-location:hover {
+  opacity: 0.3;
+}
+/*# sourceMappingURL=Modal.css.map */

@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Avenir-Regular';
+  src: url("../../../src/Typography/AvenirNext-Regular-08.ttf") format("TrueType");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.frame {
+  margin: 0rem 2rem 1rem 2rem;
+}
+
+.frame__outBox {
+  padding: 0 2rem;
+  border: solid 1.4px #DEDEDE;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  color: #003B77;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.frame__outBox__wareNum1 {
+  background-color: #FFFFFF;
+  height: 15rem;
+  width: 68rem;
+  display: inline;
+}
+
+.frame__outBox__wareNum1__title {
+  margin: 2rem 0;
+}
+
+.frame__outBox__wareNum1__bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.frame__outBox__wareNum1__bloc__address {
+  background-color: #FFFFFF;
+  width: 30%;
+}
+
+.frame__outBox__wareNum1__bloc__address__cat {
+  color: black;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.frame__outBox__wareNum1__bloc__address__inBox {
+  color: #7C7C7C;
+  font-size: 0.8rem;
+  margin-bottom: 1.7rem;
+}
+
+.frame__outBox__wareNum1__bloc__contact {
+  background-color: #FFFFFF;
+  width: 30%;
+}
+
+.frame__outBox__wareNum1__bloc__contact__cat {
+  color: black;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.frame__outBox__wareNum1__bloc__contact__inBox {
+  color: #7C7C7C;
+  font-size: 0.8rem;
+  margin-bottom: 1.7rem;
+}
+
+.frame__outBox__wareNum1__bloc__inventory {
+  background-color: #FFFFFF;
+  width: 30%;
+}
+
+.frame__outBox__wareNum1__bloc__inventory__cat {
+  color: black;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.frame__outBox__wareNum1__bloc__inventory__inBox {
+  color: #7C7C7C;
+  font-size: 0.8rem;
+  margin-bottom: 1.7rem;
+}
+/*# sourceMappingURL=WarehouseCard.css.map */

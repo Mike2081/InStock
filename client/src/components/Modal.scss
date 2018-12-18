@@ -1,0 +1,121 @@
+@import '../styles/partials/variables';
+
+.modal-layer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.form-container {
+  position: absolute;
+  color: rgb(57,57,57);
+  background-color: #FFFFFF;
+  padding: 35px 55px;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  z-index: 2;
+  border-radius: 3px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  &__close-button {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+     &:hover {
+      opacity: 0.3;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__close-icon {
+    margin-bottom: 10px;
+  }
+  &__close-text {
+    text-transform: uppercase;
+    color: $silver-grey;
+  }
+  &__header {
+    margin-bottom: 45px;
+  }
+  &__sub-header {
+    margin-bottom: 10px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__sub-info {
+    flex-direction: column;
+    display: flex;
+    width: 42%;
+    margin-bottom: 25px;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    &--warehouse {
+      width: 42%;
+      margin-bottom: 45px;
+    }
+  }
+  &__label-header{
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  &__input {
+    background-color: white;
+    border: 1px solid $silver-grey;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 15px 14px;
+    height: 40px;
+    &::placeholder {
+      color: $silver-grey;
+    }
+    &:focus-within {
+      color: black;
+    }
+    &--select {
+      background: url("/Assets/Icons/Dropdown.svg") no-repeat;
+      background-size: 10px;
+      background-position: 95%;
+      appearance: none;
+      padding: 0 15px;
+      color: $silver-grey;
+    }
+  }
+  &__input-error {
+    color: red;
+    position: absolute;
+    margin-top: 65px;
+  }
+  &__save-location {
+    outline: none;
+    padding: 0 22px;
+    width: 131px;
+    height: 38px;
+    border: none;
+    margin-left: auto;
+    border-radius: 3px;
+    background-color: $blue;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}
