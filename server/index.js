@@ -12,8 +12,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', warehouseInv);
-app.use('/', inventoryItems);
+app.use('/warehouses', warehouseInv);
+app.use('/inventory', inventoryItems);
 
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
