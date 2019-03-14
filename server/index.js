@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const PORT = process.env.PORT || 8080;
 const bodyParser = require('body-parser');
 let warehouseInv = require('./warehouse-inventory');
 let inventoryItems = require('./inventory');
@@ -21,6 +22,6 @@ app.get('*', (req, res) => {
 	res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
-app.listen(8080, () => {
-	console.log('listening on 8080');
+app.listen(PORT, () => {
+	console.log(`listening on 8080 ${PORT}`);
 });
